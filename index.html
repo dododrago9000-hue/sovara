@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SAVORIA | مطعم فاخر</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">SAVORIA</div>
+
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#menu">القائمة</a>
+            <a href="#about">عن المطعم</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+
+        <button class="menu-btn">☰</button>
+    </header>
+
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="subtitle">تجربة طعام مختلفة</p>
+
+                <h1>
+                    نكهة تستحق
+                    <span>التجربة</span>
+                </h1>
+
+                <p class="description">
+                    أطباق مختارة بعناية، مكونات طازجة،
+                    وتجربة مصممة لتبقى في ذاكرتك.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="primary-btn">
+                        اكتشف القائمة
+                    </a>
+
+                    <a href="#contact" class="secondary-btn">
+                        احجز طاولتك
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="menu" class="menu-section">
+
+            <p class="section-label">قائمتنا</p>
+
+            <h2>أطباقنا المميزة</h2>
+
+            <div class="menu-grid">
+
+                <div class="food-card">
+                    <div class="food-image">
+    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80" alt="باستا">
+</div>
+                    <h3>باستا SAVORIA</h3>
+                    <p>صلصة كريمية ومكونات طازجة.</p>
+                    <strong>$14</strong>
+                </div>
+
+                <div class="food-card">
+                   <div class="food-image">
+    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=80" alt="ستيك">
+</div>
+                    <h3>ستيك فاخر</h3>
+                    <p>لحم مشوي بعناية مع صلصة خاصة.</p>
+                    <strong>$24</strong>
+                </div>
+
+                <div class="food-card">
+                   <div class="food-image">
+    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=900&q=80" alt="سوشي">
+</div>
+                    <h3>طبق السوشي</h3>
+                    <p>مزيج مختار من النكهات اليابانية.</p>
+                    <strong>$19</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="about" class="about-section">
+
+            <div>
+                <p class="section-label">قصتنا</p>
+
+                <h2>الطعام أكثر من مجرد وجبة.</h2>
+
+                <p>
+                    في SAVORIA نؤمن أن المطعم الجيد لا يقدم الطعام فقط،
+                    بل يصنع تجربة كاملة تبدأ من أول نظرة وتنتهي بآخر لقمة.
+                </p>
+            </div>
+
+        </section>
+
+
+        <section id="contact" class="contact-section">
+
+    <p class="section-label">تواصل معنا</p>
+
+    <h2>نحن بانتظارك</h2>
+
+    <p class="contact-text">
+        للحجز أو للاستفسار، تواصل معنا مباشرة عبر WhatsApp.
+    </p>
+
+    <a
+        href="https://wa.me/212600000000"
+        class="primary-btn whatsapp-btn"
+        target="_blank"
+    >
+        💬 تواصل عبر WhatsApp
+    </a>
+
+</section>
+
+            <p class="section-label">احجز الآن</p>
+
+            <h2>طاولتك تنتظرك</h2>
+
+            <button class="primary-btn">
+                احجز طاولة
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 SAVORIA. جميع الحقوق محفوظة.</p>
+    </footer>
+
+<div class="booking-modal" id="bookingModal">
+
+    <div class="booking-box">
+
+        <button class="close-booking" id="closeBooking">×</button>
+
+        <p class="section-label">SAVORIA</p>
+
+        <h2>احجز طاولتك</h2>
+
+        <form id="bookingForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="اسمك"
+                required
+            >
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="رقم الهاتف"
+                required
+            >
+
+            <input
+                type="date"
+                id="date"
+                required
+            >
+
+            <input
+                type="time"
+                id="time"
+                required
+            >
+
+            <input
+                type="number"
+                id="guests"
+                placeholder="عدد الأشخاص"
+                min="1"
+                max="20"
+                required
+            >
+
+            <button type="submit" class="primary-btn">
+                تأكيد الحجز
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+    <script src="script.js"></script>
+
+</body>
+</html>
